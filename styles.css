@@ -1,0 +1,92 @@
+/*global styles*/
+
+body {
+    background-color: rgb(17, 11, 54);
+    color: rgb(211, 215, 221);
+    align-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.9em;
+    letter-spacing: 0.3em;
+    margin-top: 9em;
+}
+
+h4 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+p {
+    line-height: 1.3em;
+    font-size: 1.2em;
+}
+
+/*avigation styles*/
+
+.nav-box {
+    width: 100%;
+    display: flex;
+}
+
+.nav-box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
+.nav-box li {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 2em;
+}
+
+/*banner styles*/
+
+.title {
+    padding-top: 1.5em;
+    padding-bottom: 0em;
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.sub-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+/*sections*/
+
+.skills {
+    display: flex;
+    width: 100%;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    padding: 2em;
+}
+
+
+/*buttons*/
+
+.button {
+    width: 20%;
+    margin: auto;
+    padding: auto;
+    margin-top: 7em;
+    border: 1px solid rgb(211, 215, 221);
+}
+
