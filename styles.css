@@ -78,8 +78,9 @@ p {
 /*about me section*/
 
 .aboutme {
-   background-color: rosybrown;
+   background-color: #E6E6FF;
    padding: 3em 6em;
+   color: rgb(17, 11, 54);
 } 
 
 .flex-container {
@@ -103,6 +104,11 @@ p {
 
 /*projects section*/
 
+.project-section {
+    background-color:rgb(197, 209, 240);
+    color: black;
+}
+
 .projects-container {
     display: flex;
     flex-direction: row;
@@ -113,9 +119,13 @@ p {
 }
 
 .project-item {
-    border: 1px solid white;
+    border: 1px solid black;
     height: 15em;
     width: 15em;
+}
+
+.project {
+    display: none;
 }
 
 /*contact page*/
@@ -162,6 +172,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.details-item {
+
 }
 
 
