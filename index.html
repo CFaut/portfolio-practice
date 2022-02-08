@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <title>Casey Fautley's Portfolio</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <i class="fas fa-angle-double-down"></i>
+
+    
 </head>
 
 <body>
+    
 
 <div class='nav-box'>
   <nav>
@@ -34,7 +37,7 @@
 </div>
 
 
-<button class='button'><span>View my projects</span></button>
+<button class='button'><span>View my projects</span><span><i class="hover-icon fas fa-angle-double-down"></i></span></button>
 </div>
 
 
@@ -62,6 +65,31 @@
     <div class='project-item'>Project 5</div>
     <div class='project-item'>Project 6</div>
 </div>
+</div>
+
+<div class='contact section'>
+    <form class='form'>
+    <h3>Contact Me</h3>
+    <p class='contact-description'>Have a question or want to work together?</p>
+    <input id='name' type='text' name='name' value='Name' required >
+    <br>
+    <input id='email' type='text' name='email' value='Enter Email' required>
+    <br>
+    <textarea id='message' name='message' rows='20' cols='30' minlength='2' maxlength='150'>Want to leave a message? Type here.</textarea>
+    </form>
+
+    <form class='submission'>
+        <input type='submit' value='Submit'>
+    </form>
+
+    <div class='details'>
+        <h4>Or contact me directly</h4>
+        <div class='details-container'>
+            <div class='details-item'>071 686 9227</div>
+            <div class='details-item'>fautley.casey@gmail.com</div>
+            <div class='details-item'>LinkedIn</div>
+        </div>
+    </div>
 </div>
 
 </body>
