@@ -4,6 +4,7 @@
     <title>Casey Fautley's Portfolio</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -18,9 +19,9 @@
   <nav>
       <ul>
           <li>Home</li>
-          <li>About</li> 
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#aboutme">About</a></li> 
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
       </ul>
   </nav>
 </div>
@@ -37,11 +38,11 @@
 </div>
 
 
-<button class='button'><span>View my projects</span><span><i class="hover-icon fas fa-angle-double-down"></i></span></button>
+<button class='button'><a href="#projects"><span class='buttontext'>View my projects</span><span><i class="hover-icon fas fa-angle-double-down"></i></span></a></button>
 </div>
 
 
-<div class='aboutme section'>
+<div id='aboutme' class='aboutme section'>
     <h3>About Me</h3>
       <p class='bio'>I'm a South African based front-end developer who loves to create beautiful and efficient web pages. I started off as a physiotherapist in the chronic pain field before deciding to pursue a career in tech. I like simplistic and smooth designs that create a memorable experience for different types of users.
       </p>
@@ -53,39 +54,39 @@
         </div>
     </div>
 
-<div class='project-section section'>
-<div class='projects'>
+<div id='projects' class='project-section section'>
+<div>
     <h3>Projects</h3>
 </div>
-<div class='projects-container'>
-    <div class='project-item'>
-        <p>Project 1</p>
-        <p class='project'>This is project number one</p>
+<div class='projects-container' id='project-grid'>
+    <div class='projblock'>
+        <img id="coffee" src="/pictures/coffee.jpg" alt="coffee">
+        <p class='project'>This is project number one</p> 
     </div>
-    <div class='project-item'>
-        <p>Project 2</p>
+    <div class='projblock'>
+        <img id="water" src="/pictures/water.jpg" alt="water">
         <p class='project'>This is project number two</p>
     </div>
-    <div class='project-item'>
-        <p>Project 3</p>
+    <div class='projblock'>
+        <img id="stars" src="/pictures/stars.jpg" alt="stars">
         <p class='project'>This is project number three</p>
     </div>
-    <div class='project-item'>
-        <p>Project 4</p>
+    <div class='projblock'>
+        <img id="mountain" src="/pictures/mountain.jpg" alt="mountain">
         <p class='project'>This is project number four</p>
     </div>
-    <div class='project-item'>
-        <p>Project 5</p>
+    <div class='projblock'>
+        <img id="smoothie" src="/pictures/smoothie.jpg" alt="smoothie">
         <p class='project'>This is project number five</p>
     </div>
-    <div class='project-item'>
-        <p>Project 6</p>
+    <div class='projblock'>
+        <img id="travel" src="/pictures/travel.jpg" alt="travel">
         <p class='project'>This is project number six</p>
     </div>
 </div>
 </div>
 
-<div class='contact section'>
+<div id='contact' class='section'>
     <form class='form'>
     <h3>Contact Me</h3>
     <p class='contact-description'>Have a question or want to work together?</p>
@@ -96,8 +97,9 @@
     <textarea id='message' name='message' rows='20' cols='30' minlength='2' maxlength='150'>Want to leave a message? Type here.</textarea>
     </form>
 
-    <form class='submission'>
+    <form class ='submission'>
         <input id='submit' type='submit' value='Submit'>
+        <p id = 'thankYou'>Thank you for your email! I will be in contact soon.</p>
     </form>
 
     <div class='details'>
@@ -111,5 +113,7 @@
 </div>
 
 </body>
+
+<script src="index.js"></script>
 
 </html>
