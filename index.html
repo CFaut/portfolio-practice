@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Casey Fautley's Portfolio</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <nav class="nav-box">
+        <button id="menu-icon"><span>|||</span></button>
+        <ul>
+            <li class="nav-list"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-list"><a class="nav-link" href="#aboutme">About</a></li>
+            <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class='section title-section'>
+        <div id="home" class='title'>
+            <h1>Casey Fautley</h1>
+        </div>
+
+        <div class='sub-title'>
+            <h2>Front-end Developer</h2>
+        </div>
+
+
+        <button class='button'><a href="#projects"><span class="btn-text">View my projects</span><span><i
+                        class="hover-icon fas fa-angle-double-down"></i></span></a></button>
+    </section>
+
+
+    <div id='aboutme' class='aboutme section'>
+        <h3>About Me</h3>
+        <p class='bio'>I'm a South African based front-end developer who loves to create beautiful and efficient web
+            pages. I started off as a physiotherapist in the chronic pain field before deciding to pursue a career in
+            tech. I like simplistic and smooth designs that create a memorable experience for different types of users.
+        </p>
+        <h4>Skillset</h4>
+        <div class='flex-container'>
+            <div class='flex-item'>html</div>
+            <div class='flex-item'>css</div>
+            <div class='flex-item'>Javascript</div>
+            <div class='flex-item'>React and Redux</div>
+            <div class='flex-item'>Github</div>
+            <div class='flex-item'>Basic Python</div>
+        </div>
+    </div>
+
+    <div id='projects' class='project-section section'>
+        <div>
+            <h3>Projects</h3>
+        </div>
+        <div class='projects-container' id='project-grid'>
+            <a class='projblock' href="https://silver-moxie-7b92a6.netlify.app/">
+                <img id="safe-haven" src="/pictures/safe-haven.jpg" alt="Safe-haven website">
+                <p class='project'>Safe Haven</p>
+            </a>
+            <a class='projblock' href="https://brainnest-fd-group-assingment.github.io/CSS-Assignment/">
+                <img id="water" src="/pictures/better-living.jpg" alt="A doctor stands with a stethoscope">
+                <p class='project'>Better Living</p>
+            </a>
+            <a class='projblock' href="https://cosmic-kleicha-619339.netlify.app/">
+                <img id="stars" src="/pictures/subreddit-app.jpg" alt="A person is holding a cell phone">
+                <p class='project'>Subreddit App</p>
+            </a>
+            <a class='projblock' href="https://glistening-shortbread-50772e.netlify.app/">
+                <img id="mountain" src="/pictures/get-organised.jpg" alt="An office set-up with a to-do list">
+                <p class='project'>Get Organised</p>
+            </a>
+            <a class='projblock' href="https://brainnest-fd-group-assingment.github.io/Rock-paper-scicors/">
+                <img id="smoothie" src="/pictures/rock-paper-scissors.jpg"
+                    alt="Two teenagers playing rock paper scissors.">
+                <p class='project'>Rock, Paper Scissors Game</p>
+            </a>
+            <a class='projblock' href="https://brainnest-fd-group-assingment.github.io/calculator/">
+                <img id="travel" src="/pictures/project-6.jpg" alt="A calculator">
+                <p class='project'>Calculator</p>
+            </a>
+        </div>
+    </div>
+
+    <div id='contact' class='section'>
+        <form class='form'>
+            <h3>Contact Me</h3>
+            <p class='contact-description'>Have a question or want to work together?</p>
+            <input id='name' type='text' name='name' value='Name' required>
+            <br>
+            <input id='email' type='text' name='email' value='Enter Email' required>
+            <br>
+            <textarea id='message' name='message' rows='20' cols='30' minlength='2'
+                maxlength='150'>Want to leave a message? Type here.</textarea>
+        </form>
+
+        <form class='submission'>
+            <input id='submit' type='submit' value='Submit'>
+            <p id='thankYou'>Thank you for your email! I will be in contact soon.</p>
+        </form>
+
+        <div class='details'>
+            <h4>Or contact me directly</h4>
+            <div class='details-container'>
+                <div class='details-item'>071 686 9227</div>
+                <div class='details-item'>fautley.casey@gmail.com</div>
+                <div class='details-item'>LinkedIn</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
