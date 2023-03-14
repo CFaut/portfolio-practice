@@ -14,6 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
 
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('sGNzIaKj1_FMf3dbF');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
+
 </head>
 
 <body>
@@ -96,16 +120,16 @@
         </div>
     </div>
 
-    <div id='contact' class='section'>
+    <div id='contact-form' class='section'>
         <form class='form'>
             <h3>Contact Me</h3>
             <p class='contact-description'>Have a question or want to work together?</p>
-            <input id='name' type='text' name='name' value='Name' required>
+            <input id='name' type='text' name='name' value='' placeholder="Name" required>
             <br>
-            <input id='email' type='text' name='email' value='Enter Email' required>
+            <input id='email' type='text' name='email' value='' placeholder="Email" required>
             <br>
-            <textarea id='message' name='message' rows='20' cols='30' minlength='2'
-                maxlength='150'>Want to leave a message? Type here.</textarea>
+            <textarea id='message' name='message' rows='20' cols='30' minlength='2' maxlength='150'
+                placeholder="Want to leave a mesage? Type here"></textarea>
         </form>
 
         <form class='submission'>

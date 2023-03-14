@@ -34,15 +34,6 @@ let hideText = function (projects) {
 }
 hideText(project);
 
-// let projects = document.getElementsByClassName('proj-block')
-// let caption = doc
-
-// function showText() {
-//     for(let i = 0; i < projects.length; i++) {
-
-//     }
-// }
-
 let navigation = document.getElementsByClassName("nav-list");
 let navLink = document.getElementsByClassName("nav-link");
 let menuButton = document.getElementById("menu-icon");
@@ -77,6 +68,8 @@ let hideNav = (list, /*links*/) => {
 
 hideNav(navigation);
 
+// emailjs.init('sGNzIaKj1_FMf3dbF');
+// emailjs.sendForm('contact_service', 'contact_form', this)
 
 
 
