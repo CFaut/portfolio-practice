@@ -57,6 +57,8 @@ p {
 
 
 
+
+
 .nav-box a:link {
     color: white;
     text-decoration: none;
@@ -240,19 +242,31 @@ p {
 #name {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
 }
 #email {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
 }
 #message {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     height: 15em;
+    border-radius: 10px;
 }
 
 .submission {
     margin-top: 2em;
+    border-radius: 10px;
+}
+
+#submit {
+    border-radius: 10px;
+}
+
+#popup {
+    display: none;
 }
 
 .details h4 {
@@ -267,13 +281,8 @@ p {
     justify-content: space-around;
 }
 
-#thankYou {
-    display: none;
-    padding: 1.5em;
-    font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(197, 209, 240);
-    border-radius: 20%;
+.details-item {
+    border-radius: 10px;
 }
 
 
@@ -289,6 +298,7 @@ p {
     cursor: pointer;
     font-size: 1em;
     text-align: center;
+    border-radius: 10px;
 }
 
 .btn-text {

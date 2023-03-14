@@ -72,4 +72,14 @@ hideNav(navigation);
 // emailjs.sendForm('contact_service', 'contact_form', this)
 
 
+let form = document.getElementById('contact-form')
+let submit = document.getElementById('submit-btn')
+let popup = document.getElementById('popup')
 
+function handleSubmit() {
+    form.style.display = 'none';
+    popup.style.display = 'block';
+    console.log('Im working')
+}
+
+submit.addEventListener('click', handleSubmit)
